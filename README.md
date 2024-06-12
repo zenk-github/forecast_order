@@ -8,6 +8,9 @@ ForecastOrdersはPython3系で動作し、以下のライブラリに依存し�
 pip install requests
 ```
 # Methods
+```
+・forecast_orders(self, client_id, api_token, pred_id, original_data):
+    受注予測を実行し、その結果を取得します。
 """
 引数は省略不可です。
 Args:
@@ -18,6 +21,7 @@ Args:
 Returns:
   dict:予測結果
 """
+```
 # Usage
 以下は、ForecastOrders クラスを使用して予測を実行し、結果を取得するサンプルコードです。
 ```
