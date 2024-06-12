@@ -8,10 +8,10 @@ class ForecastOrders:
     # ジョブステータス取得用エンドポイント
     GET_JOBS_STATUS_ENDPOINT = "/pred/jobs/"
 
-    def forecast_orders(self, client_id, private_key, pred_id, original_data,):
+    def forecast_orders(self, client_id, api_token, pred_id, original_data,):
         print("forecast_orders")
 
-        self.headers = {"Authorization": f"Bearer {private_key}"}
+        self.headers = {"Authorization": f"Bearer {api_token}"}
         # 予測用エンドポイント
         forecast_endpoint = self.create_forecast_endpoint(client_id, pred_id)
 
